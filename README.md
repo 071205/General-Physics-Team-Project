@@ -7,10 +7,10 @@ Visual and interactive simulation of the pulled spool problem in classical mecha
 This project reproduces and tests the static-friction model for a spool pulled by a ribbon at various angles, following Carl E. Mungan, "Pulling a Spool," *Phys. Teach.* **61**, 178–181 (2023).
 
 **Authors:**
-- Choi Jihoon (202611231)
+- Choi Jihun (202611231)
 - Lee Jeongwon (202611164)
-- Heo Yul (202611240)
-- Park Junseong (202611095)
+- Hur Yul (202611240)
+- Park Junsung (202611095)
 
 **Course:** General Physics I (BS103A), DGIST, 2026 Spring
 
@@ -66,23 +66,27 @@ Experiment with adjusting **Ri and Ro** to see how the critical angle changes!
 ## File Structure
 
 ```
-pulled-spool/
-├── README.md                    ← You are here
-├── spool_simulation.py          ← Main GUI program
-├── spool_model.py              ← Physics calculations
-├── requirements.txt             ← Python dependencies
-├── run_windows.bat             ← Windows launcher
-└── videos/                      ← Experiment recordings
-    ├── experiment1_angle.mp4
-    ├── experiment2_radius_larger.mp4
-    ├── experiment2_radius_equal.mp4
-    └── experiment2_radius_smaller.mp4
+General-Physics-Team-Project/
+├── README.md                       ← You are here
+├── spool_simulation.py             ← Main GUI program
+├── spool_model.py                  ← Physics calculations
+├── requirements.txt                ← Python dependencies
+├── run_windows.bat                 ← Windows launcher
+├── Experiment1 - small angle.mp4   ← Exp 1: rolls forward (theta < theta_c)
+├── Experiment1 - critical angle.mp4 ← Exp 1: stays put (theta = theta_c)
+├── Experiment1 - large angle.mp4   ← Exp 1: rolls backward (theta_c < theta < 90)
+├── Experiment2 - shorter than R.mp4 ← Exp 2: acting radius < Ro
+├── Experiment2 - same with R.mp4    ← Exp 2: acting radius = Ro
+└── Experiment2 - longer than R.mp4  ← Exp 2: acting radius > Ro
 ```
 
 ## Experiment Videos
 
+The experiment recordings are included in this repository (the `.mp4` files above).
+Click any video file in the file list to play it in the browser.
+
 ### Experiment 1: Rolling Direction vs. Pulling Angle
-Demonstrates that the spool's rolling direction reverses as the pulling angle crosses the critical angle.
+Demonstrates that the spool's rolling direction reverses as the pulling angle crosses the critical angle: it rolls toward us at a small angle, stays put at the critical angle, and rolls away at an intermediate angle.
 
 ### Experiment 2: Effective Acting Radius
 Shows that varying the radius at which the string acts—independent of pulling angle—produces the same three regimes by changing the torque about the contact point.
